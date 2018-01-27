@@ -52,7 +52,11 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "1997-06-17"
+        "onsetDateTime": "1997-06-17",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
       }
     },
     {
@@ -95,7 +99,11 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2015-10-02"
+        "onsetDateTime": "2015-10-02",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
       }
     },
     {
@@ -148,7 +156,10 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2007-11-30"
+        "onsetDateTime": "2007-11-30",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-jones-vince"
+        }
       }
     },
     {
@@ -201,7 +212,11 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2012-03-07"
+        "onsetDateTime": "2012-03-07",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
       }
     }
   ]

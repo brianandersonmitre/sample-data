@@ -1,0 +1,62 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ProcedureRequest/cc-service-betsy-edu-ckd"
+      },
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "cc-service-betsy-edu-ckd",
+        "status": "active",
+        "intent": "plan",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408982008",
+              "display": "Renal care education (procedure)"
+            }
+          ],
+          "text": "Education on CKD management"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "performer": {
+          "reference": "Practitioner/cc-prac-smith-julie"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ProcedureRequest/cc-service-betsy-edu-diet"
+      },
+      "resource": {
+        "resourceType": "ProcedureRequest",
+        "id": "cc-service-betsy-edu-diet",
+        "status": "active",
+        "intent": "plan",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11816003",
+              "display": "Diet education (procedure)"
+            }
+          ],
+          "text": "Diet counseling"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "performer": {
+          "reference": "Practitioner/cc-prac-gonzalez-maria"
+        }
+      }
+    }
+  ]
+}

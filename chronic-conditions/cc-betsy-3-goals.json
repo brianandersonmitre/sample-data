@@ -1,0 +1,117 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-a1c"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-a1c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Hemoglobin A1c &lt; 7.0</div></div>"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high-priority",
+              "display": "High Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Hemoglobin A1c < 7.0"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2016-11-30",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4548-4",
+                "display": "Hemoglobin A1c total in Blood"
+              }
+            ],
+            "text": "Hemoglobin A1c total in Blood"
+          },
+          "detailQuantity": {
+            "value": "7.0",
+            "comparator": "<",
+            "unit": "%",
+            "system": "http://unitsofmeasure.org/",
+            "code": "%"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-diabetes",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ],
+        "note": [
+          {
+            "text": "Regularly monitor A1C levels toward overall goal of 6.0."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-low-bp"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-low-bp",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "medium-priority",
+              "display": "Medium Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Avoid low blood pressure"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2015-06-30",
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd"
+          }
+        ]
+      }
+    }
+  ]
+}

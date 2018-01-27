@@ -42,7 +42,10 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2014-02-14"
+        "onsetDateTime": "2014-02-14",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        }
       }
     },
     {
@@ -80,7 +83,10 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2010-03-22"
+        "onsetDateTime": "2010-03-22",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-johnson-sam"
+        }
       }
     },
     {
@@ -118,7 +124,10 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy"
         },
-        "onsetDateTime": "2012-09-15"
+        "onsetDateTime": "2012-09-15",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-johnson-sam"
+        }
       }
     }
   ]

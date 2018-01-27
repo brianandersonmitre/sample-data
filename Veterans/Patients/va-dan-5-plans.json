@@ -5,6 +5,32 @@
     {
       "request": {
         "method": "PUT",
+        "url": "CareTeam/va-careteam-dan"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-careteam-dan",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "name": "Dan's care team",
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "participant": [
+          {
+            "member": {
+              "reference": "CareTeam/va-team-visn6-vamc1-pc"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Goal/va-goal-dan-1"
       },
       "resource": {

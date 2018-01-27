@@ -32,6 +32,9 @@
         "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy"
+          },
+          {
+            "reference": "CareTeam/cc-team-betsy-support"
           }
         ],
         "activity": [

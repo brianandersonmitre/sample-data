@@ -5,6 +5,37 @@
     {
       "request": {
         "method": "PUT",
+        "url": "CareTeam/va-careteam-byron"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-careteam-byron",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "name": "Byron's care team",
+        "subject": {
+          "reference": "Patient/va-pat-byron"
+        },
+        "participant": [
+          {
+            "member": {
+              "reference": "CareTeam/va-team-visn6-vamc1-pc"
+            }
+          },
+          {
+            "member": {
+              "reference": "CareTeam/va-team-visn6-cboc1-mental-health"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Goal/va-goal-byron-life"
       },
       "resource": {
