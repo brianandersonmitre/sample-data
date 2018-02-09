@@ -15,6 +15,10 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "Type 2 diabetes"
+        },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
@@ -72,6 +76,10 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "Congestive heart failure"
+        },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
@@ -118,6 +126,10 @@
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
           ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Chronic kidney disease"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -174,6 +186,10 @@
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
           ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Diabetic retinopathy"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",

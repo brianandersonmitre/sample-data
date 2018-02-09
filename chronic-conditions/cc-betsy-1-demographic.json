@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>RelatedPerson Daughter</div></div>"
+          "div": "RelatedPerson Daughter"
         },
         "patient": {
           "reference": "Patient/cc-pat-betsy",
@@ -72,7 +72,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Betsy Johnson</div>"
+          "div": "Betsy Johnson"
         },
         "extension": [
           {

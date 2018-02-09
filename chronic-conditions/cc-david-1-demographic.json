@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>RelatedPerson Wife</div></div>"
+          "div": "RelatedPerson Wife"
         },
         "patient": {
           "reference": "Patient/cc-pat-david",
@@ -72,7 +72,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">David Sullivan</div>"
+          "div": "David Sullivan"
         },
         "extension": [
           {

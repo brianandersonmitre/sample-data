@@ -1,0 +1,55 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/ckd-lab-codes"
+      },
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "ckd-lab-codes",
+        "url": "http://clinicalcloud.solutions/fhir/ValueSet/ckd-lab-codes",
+        "name": "CKD Lab Codes",
+        "status": "draft",
+        "experimental": true,
+        "date": "2018-02-06",
+        "publisher": "Clinical Cloud Solutions, LLC",
+        "compose": {
+          "include": [
+            {
+              "system": "http://loinc.org",
+              "concept": [
+                {
+                  "code": "69405-9",
+                  "display": "eGFR"
+                },
+                {
+                  "code": "32294-1",
+                  "display": "UACR"
+                },
+                {
+                  "code": "59260-0",
+                  "display": "Hemoglobin"
+                },
+                {
+                  "code": "55454-3",
+                  "display": "Hemoglobin A1c"
+                },
+                {
+                  "code": "2823-3",
+                  "display": "Serum potassium"
+                },
+                {
+                  "code": "2777-1",
+                  "display": "Serum phosphorus"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

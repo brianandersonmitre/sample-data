@@ -15,6 +15,10 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "Depressed mood"
+        },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
@@ -56,6 +60,15 @@
       "resource": {
         "resourceType": "Condition",
         "id": "cc-cond-betsy-employment",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Unemployed"
+        },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
@@ -97,6 +110,15 @@
       "resource": {
         "resourceType": "Condition",
         "id": "cc-cond-betsy-transportation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Unable to drive a car"
+        },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [

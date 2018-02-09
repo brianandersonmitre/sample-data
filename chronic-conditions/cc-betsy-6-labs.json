@@ -1,0 +1,132 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-egfr"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-egfr",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "eGFR"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76633-7",
+              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
+              "userSelected": true
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "69405-9",
+              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+            }
+          ],
+          "text": "eGFR"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2017-12-07",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 28,
+          "unit": "mL/min/1.73m2",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mL/min/{1.73_m2}"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-uacr"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-uacr",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "UACR"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "30001-2",
+              "display": "Microalbumin/Creatinine [Ratio] in Urine by Test strip",
+              "userSelected": true
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "32294-1",
+              "display": "Albumin/​Creatinine [Ratio] in Urine"
+            }
+          ],
+          "text": "UACR"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-01-15",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 140,
+          "unit": "mg/mmol creatinine",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/mmol{creat}"
+        }
+      }
+    }
+  ]
+}

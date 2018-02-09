@@ -15,6 +15,10 @@
             "http://hl7.org/fhir/StructureDefinition/CarePlan"
           ]
         },
+        "text": {
+          "status": "generated",
+          "div": "Betsy's CKD care plan"
+        },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },

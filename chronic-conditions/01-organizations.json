@@ -10,6 +10,10 @@
       "resource": {
         "resourceType": "Organization",
         "id": "cc-org-meals-on-wheels",
+        "text": {
+          "status": "generated",
+          "div": "Meals on Wheels organization"
+        },
         "name": "Meals on Wheels",
         "telecom": [
           {

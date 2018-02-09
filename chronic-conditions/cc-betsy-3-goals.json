@@ -10,6 +10,10 @@
       "resource": {
         "resourceType": "Goal",
         "id": "cc-goal-betsy-a1c",
+        "text": {
+          "status": "generated",
+          "div": "Hemoglobin A1c < 7.0"
+        },
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -84,6 +88,10 @@
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
           ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Avoid low blood pressure"
         },
         "status": "in-progress",
         "priority": {

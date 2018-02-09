@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 500 MG Oral Tablet</div></div>"
+          "div": "Metformin hydrochloride 500 MG Oral Tablet"
         },
         "status": "active",
         "intent": "order",
@@ -92,7 +92,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Vitamin D 1000 UNT orally per day</div></div>"
+          "div": "Vitamin D 1000 UNT orally per day"
         },
         "status": "active",
         "intent": "order",

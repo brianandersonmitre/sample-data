@@ -10,6 +10,10 @@
       "resource": {
         "resourceType": "ProcedureRequest",
         "id": "cc-service-betsy-edu-ckd",
+        "text": {
+          "status": "generated",
+          "div": "Education on CKD management"
+        },
         "status": "active",
         "intent": "plan",
         "code": {
@@ -38,6 +42,10 @@
       "resource": {
         "resourceType": "ProcedureRequest",
         "id": "cc-service-betsy-edu-diet",
+        "text": {
+          "status": "generated",
+          "div": "Diet education"
+        },
         "status": "active",
         "intent": "plan",
         "code": {
