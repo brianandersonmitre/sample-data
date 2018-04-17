@@ -177,6 +177,67 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Condition/cc-cond-betsy-hypertension"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-hypertension",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Hypertension"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255604002",
+              "display": "Mild"
+            }
+          ],
+          "text": "Mild"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertension"
+            }
+          ],
+          "text": "Hypertension"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2010-03-05",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Condition/cc-cond-betsy-retinopathy"
       },
       "resource": {
@@ -229,6 +290,169 @@
           "display": "Betsy"
         },
         "onsetDateTime": "2012-03-07",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-vascular"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-vascular",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Peripheral vascular disease"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255604002",
+              "display": "Mild"
+            }
+          ],
+          "text": "Mild"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "400047006",
+              "display": "Peripheral vascular disease (disorder)"
+            }
+          ],
+          "text": "Peripheral vascular disease"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2014-08-20",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-dyslipidemia"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-dyslipidemia",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Dyslipidemia"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "370992007",
+              "display": "Dyslipidemia (disorder)"
+            }
+          ],
+          "text": "Dyslipidemia"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2014-08-20",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-anxiety"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-anxiety",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Anxiety"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "problem"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "370992007",
+              "display": "Anxiety (finding)"
+            }
+          ],
+          "text": "Anxiety"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2017-06-10",
         "asserter": {
           "reference": "Practitioner/cc-prac-carlson-john",
           "display": "Dr. John Carlson, MD"

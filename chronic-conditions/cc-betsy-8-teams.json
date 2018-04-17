@@ -134,42 +134,73 @@
         ]
       }
     },
-      {
-        "request": {
-          "method": "PUT",
-          "url": "CareTeam/cc-team-betsy-support"
-        },
-        "resource": {
-          "resourceType": "CareTeam",
-          "id": "cc-team-betsy-support",
-          "meta": {
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam"
-            ]
-          },
-          "name": "Support Services",
-          "subject": {
-            "reference": "Patient/cc-pat-betsy",
-            "display": "Betsy"
-          },
-          "participant": [
-            {
-              "role": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "274272004",
-                    "display": "Catering services"
-                  }
-                ],
-                "text": "Catering services"
-              },
-              "member": {
-                "reference": "Organization/cc-org-meals-on-wheels"
-              }
-            }
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/cc-team-betsy-support"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "cc-team-betsy-support",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
           ]
-        }
+        },
+        "name": "Support Services",
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "106328005",
+                  "display": "Social worker"
+                }
+              ],
+              "text": "Renal Social Worker"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-johnson-sam"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "133932002",
+                  "display": "Caregiver"
+                }
+              ],
+              "text": "Caregiver"
+            },
+            "member": {
+              "reference": "RelatedPerson/cc-pat-betsy-related-daughter",
+              "display": "Daughter"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "274272004",
+                  "display": "Catering services"
+                }
+              ],
+              "text": "Catering services"
+            },
+            "member": {
+              "reference": "Organization/cc-org-meals-on-wheels"
+            }
+          }
+        ]
       }
+    }
   ]
 }

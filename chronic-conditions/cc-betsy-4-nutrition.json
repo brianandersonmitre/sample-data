@@ -14,6 +14,32 @@
           "status": "generated",
           "div": "Renal Diet"
         },
+        "extension": [
+          {
+            "url": "http://clinicalcloud.solutions/fhir/StructureDefinition/NutritionOrder-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33489005",
+                  "display": "Renal disease diet"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "valueReference": {
+                "reference": "Goal/cc-goal-betsy-a1c"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "valueReference": {
+                "reference": "Goal/cc-goal-betsy-lab-phos"
+            }
+          }
+        ],
         "status": "planned",
         "patient": {
           "reference": "Patient/cc-pat-betsy"

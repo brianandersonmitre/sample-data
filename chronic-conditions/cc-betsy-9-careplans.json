@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "CarePlan/cc-careplan-betsy-pc"
+        "url": "CarePlan/cc-careplan-betsy-ckd"
       },
       "resource": {
         "resourceType": "CarePlan",
-        "id": "cc-careplan-betsy-pc",
+        "id": "cc-careplan-betsy-ckd",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/CarePlan"
@@ -17,26 +17,135 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's CKD care plan"
+          "div": "Betsy's CKD care plan (dynamic)"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
         "status": "active",
         "intent": "plan",
-        "title": "Primary Care",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "dynamic"
+              }
+            ],
+            "text": "Dynamic"
+          }
+        ],
+        "title": "CKD Care Plan",
         "addresses": [
           {
             "reference": "Condition/cc-cond-betsy-diabetes"
           },
           {
             "reference": "Condition/cc-cond-betsy-ckd"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-chf"
           }
         ],
         "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-betsy-personal"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-betsy-personal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Betsy's personal care plan (dynamic)"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "dynamic"
+              }
+            ],
+            "text": "Dynamic"
+          }
+        ],
+        "title": "Personal Care Plan",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-retinopathy"
           },
+          {
+            "reference": "Condition/cc-cond-betsy-depression"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-transportation"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-betsy-support"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-betsy-nutrition"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-betsy-nutrition",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Nutrition Plan Alignment"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "static"
+              }
+            ],
+            "text": "Static"
+          }
+        ],
+        "title": "Nutrition Plan Alignment",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-transportation"
+          }
+        ],
+        "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy-support"
           }

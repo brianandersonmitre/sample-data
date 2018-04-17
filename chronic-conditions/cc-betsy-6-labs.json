@@ -98,14 +98,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "30001-2",
-              "display": "Microalbumin/Creatinine [Ratio] in Urine by Test strip",
-              "userSelected": true
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "32294-1",
-              "display": "Albumin/​Creatinine [Ratio] in Urine"
+              "code": "44292-1",
+              "display": "Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine"
             }
           ],
           "text": "UACR"
@@ -121,10 +115,67 @@
           }
         ],
         "valueQuantity": {
-          "value": 140,
-          "unit": "mg/mmol creatinine",
+          "value": 742,
+          "unit": "mg/g",
           "system": "http://unitsofmeasure.org/",
-          "code": "mg/mmol{creat}"
+          "code": "mg/g{creat}"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-phos"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-phos",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Phosphorus"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2777-1",
+              "display": "Phosphate [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Serum phosphorus"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-02-15",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 5.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
         }
       }
     }
