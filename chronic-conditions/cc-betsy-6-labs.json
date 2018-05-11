@@ -50,7 +50,7 @@
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
-        "effectiveDateTime": "2017-12-07",
+        "effectiveDateTime": "2017-12-06",
         "performer": [
           {
             "reference": "Practitioner/cc-prac-carlson-john",
@@ -98,8 +98,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "44292-1",
-              "display": "Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine"
+              "code": "9318-7",
+              "display": "Albumin/Creatinine [Mass Ratio] in Urine"
             }
           ],
           "text": "UACR"
@@ -107,7 +107,7 @@
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
-        "effectiveDateTime": "2018-01-15",
+        "effectiveDateTime": "2017-12-06",
         "performer": [
           {
             "reference": "Practitioner/cc-prac-carlson-john",
@@ -119,6 +119,63 @@
           "unit": "mg/g",
           "system": "http://unitsofmeasure.org/",
           "code": "mg/g{creat}"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-a1c"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-a1c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Hemoglobin A1c"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2017-12-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 6.8,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org/",
+          "code": "%"
         }
       }
     },

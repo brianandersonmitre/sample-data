@@ -148,11 +148,11 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "6736007",
-              "display": "Moderate"
+              "code": "24484000",
+              "display": "Severe"
             }
           ],
-          "text": "Moderate"
+          "text": "Severe"
         },
         "code": {
           "coding": [
@@ -219,7 +219,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "38341003",
-              "display": "Hypertension"
+              "display": "Hypertension (disorder)"
             }
           ],
           "text": "Hypertension"
@@ -279,7 +279,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "44054006",
+              "code": "4855003",
               "display": "Diabetic retinopathy (disorder)"
             }
           ],

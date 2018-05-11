@@ -151,6 +151,56 @@
           "reference": "Practitioner/cc-prac-johnson-sam"
         }
       }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/cc-cond-betsy-sedentary"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cc-cond-betsy-sedentary",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Sedentary lifestyle"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ],
+            "text": "Health Concern"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "415510005",
+              "display": "Sedentary lifestyle (finding)"
+            }
+          ],
+          "text": "Sedentary lifestyle"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "onsetDateTime": "2012-09-14",
+        "asserter": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        }
+      }
     }
   ]
 }
